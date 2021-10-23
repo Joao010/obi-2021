@@ -45,14 +45,14 @@ int dfs(int u, int p) {
 int productLength(int cyclenumber) {
   unordered_map<int, int> mp;
  
-  for (int i = 1; i <= n; i++) {
+  f(i,1,n+1) {
     if (vis[i] != 0)
       mp[vis[i]]++;
   }
   
   int cnt = 1;
  
-  for (int i = 1; i <= cyclenumber; i++) {
+  f(i,1,cyclenumber+1) {
     cnt = cnt * mp[i];
   }
 
